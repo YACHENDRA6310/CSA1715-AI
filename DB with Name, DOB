@@ -1,0 +1,8 @@
+% Database of Names and Dates of Birth
+dob(yachendra, date(1980, 5, 20), o+).
+dob(ravi, date(1975, 2, 14), o-).
+dob(vasanth, date(1990, 11, 30), b+).
+
+% Predicate to retrieve the date of birth of a person
+get_dob(Name, DateOfBirth, Bloodgroup) :- dob(Name, DateOfBirth, Bloodgroup).
+
